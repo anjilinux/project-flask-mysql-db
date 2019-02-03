@@ -7,10 +7,6 @@ from flaskext.mysql import MySQL
 import os
 
 app = Flask(__name__)
-# app.config['MYSQL_DATABASE_USER'] = os.environ.get('MYSQL_USER', None)
-# app.config['MYSQL_DATABASE_PASSWORD'] = os.environ.get('MYSQL_PASS', None)
-# app.config['MYSQL_DATABASE_DB'] = os.environ.get('MYSQL_DB', None)
-# app.config['MYSQL_DATABASE_HOST'] = os.environ.get('MYSQL_HOST', None)
 app.config['MYSQL_DATABASE_USER'] = os.environ.get('MYSQL_USER', None)
 app.config['MYSQL_DATABASE_PASSWORD'] = os.environ.get('MYSQL_PASS', None)
 app.config['MYSQL_DATABASE_DB'] = os.environ.get('MYSQL_DB', None)
@@ -27,5 +23,4 @@ def main():
     return rv[0]
 
 if __name__ == "__main__":
-#    app.run()
     app.run(host='0.0.0.0')
