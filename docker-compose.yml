@@ -1,19 +1,9 @@
 version: '3'
 services:
-#  nginx:
-#    container_name: "rp"
-#    build: ./nginx/
-#    ports:
-#      - "5000:5000"
-#    depends_on:
-#      - flask
-
   # mysql
   mysql:
     container_name: "flask-db"
     image: "mysql:5.7"
-    #  volumes_from:
-    #  - data-mysql
     volumes:
       #- ./mysql:/var/lib/mysql
       - ./mysql/import:/docker-entrypoint-initdb.d
@@ -24,8 +14,6 @@ services:
       MYSQL_USER: python
       MYSQL_PASSWORD: python
       MYSQL_DATABASE: sample
-#    command: --innodb-use-native-aio=0
-
   
   # flask
   flask:
