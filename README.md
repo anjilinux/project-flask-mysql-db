@@ -39,5 +39,5 @@ If you use Vagrant with Virtuslbox you have to use your PC's resources more.
 * "app.py" shouldn't be modified but flask is only accessible from your own computer, not from any other in the network.
 So I added host IP address on "app.py" to indicat it with following [flask official document](http://flask.pocoo.org/docs/0.12/quickstart/). 
 Although there is another way probably, I had the time limit so I prioritized to give this solution as a workaround. 
-* In this solution, you have to modify the "docker-compose.yml" to save the data permanently.
+* In this solution, you have to modify the "docker-compose.yml" if you need to save the data permanently.
 
