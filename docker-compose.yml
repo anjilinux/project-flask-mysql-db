@@ -18,6 +18,8 @@ services:
       MYSQL_PASSWORD: python
 #      MYSQL_HOST: localhost
       MYSQL_DATABASE: sample
+    command: --innodb-use-native-aio=0
+
       
 #    links:
 #      - flask

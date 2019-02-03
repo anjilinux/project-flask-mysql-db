@@ -20,7 +20,7 @@ EXPOSE 5000
 ENV NAME World
 ENV MYSQL_USER python
 ENV MYSQL_PASS python
-ENV MYSQL_HOST flask-db
+#ENV MYSQL_HOST mysql
 ENV MYSQL_DB sample
 
 # Run app.py when the container launches
